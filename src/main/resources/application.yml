@@ -1,0 +1,20 @@
+server:
+  port: 1234
+
+vk:
+  groupId: 212578526
+  token: 6bb110894aa37ea3a1a8db21e704c79183c549317bb0d4ea539ccfbe6c59ff4ca00f7096ca9d0f548abd3
+  confirmationCode: b2453904
+
+open-weather-map:
+  app-id: f62cecf72577611817bb64bf8685795a
+
+yandex:
+  weather-api:
+    key: 7bf7b871-6d78-4b30-98b6-186afc8f02fe
+
+endpoint:
+  open-weather-map:
+    search-object: "http://api.openweathermap.org/geo/1.0/direct?q={query}&limit=1&appid=${open-weather-map.app-id}"
+  yandex:
+    get-weather: https://api.weather.yandex.ru/v2/forecast?lat={lat}&lon={lon}&extra=true
